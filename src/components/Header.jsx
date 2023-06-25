@@ -8,6 +8,7 @@ function Header(props) {
 
   const burgerMenuHandler = () => {
     setBurgerMenu((prev) => !prev);
+    console.log('hello')
   };
   const homeButtonHandlder = () => {
     setBurgerMenu(false);

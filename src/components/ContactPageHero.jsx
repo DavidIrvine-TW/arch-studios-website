@@ -4,7 +4,7 @@ import heroImgDesktop from '../../public/assets/contact/desktop/image-hero.jpg'
 import MobileMenu from './MobileMenu'
 import ContactPageYourProjectTablet from './ContactPageYourProjectTablet'
 
-function ContactPageHero({burgerMenu}) {
+function ContactPageHero({burgerMenu, setBurgerMenu}) {
   return (
   <div>
 <div id="vertical-container" className="absolute top-0 w-[24px] flex flex-col gap-[2.5rem] items-center ml-[2rem]">
@@ -14,7 +14,7 @@ function ContactPageHero({burgerMenu}) {
 
 
     <article className='relative w-[375px] tablet:w-[573px] desktop:w-[1110px] mx-auto'>
-        <MobileMenu burgerMenu={burgerMenu} />
+        <MobileMenu burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}/>
         <picture>
             <source srcSet={heroImgDesktop} media="(min-width: 1440px)"/>
             <source srcSet={heroImgtablet} media="(min-width: 768px)"/>

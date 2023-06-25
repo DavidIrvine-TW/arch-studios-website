@@ -112,7 +112,7 @@ const imgPaths = [
   },
 ];
 
-function PortfolioPagePortfolio({ burgerMenu }) {
+function PortfolioPagePortfolio({ burgerMenu, setBurgerMenu }) {
   return (
     <div>
       <div id="vertical-container" className="absolute top-0 w-[24px] flex flex-col gap-[2.5rem] items-center ml-[2rem]">
@@ -122,7 +122,7 @@ function PortfolioPagePortfolio({ burgerMenu }) {
 
     
     <article className="relative w-[375px] tablet:w-[573px] desktop:w-[1110px] overflow-hidden px-[2rem] tablet:px-[0px] mx-auto ">
-      <MobileMenu burgerMenu={burgerMenu} />
+      <MobileMenu burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}/>
       <ul className="flex flex-col gap-[1.5rem] relative desktop:flex-row desktop:flex-wrap">
         {imgPaths.map((img, index) => (
           <li key={index}  className="cursor-pointer relative w-[311px] h-[240px] tablet:w-full desktop:w-[350px] desktop:h-[560px]">

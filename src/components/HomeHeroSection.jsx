@@ -10,7 +10,7 @@ import HomePageHeroSlideTwo from "./HomePageHeroSlideTwo";
 import HomePageHeroSlideThree from "./HomePageHeroSlidethree";
 import HomePageHeroSlideFour from "./HomePageHeroSlideFour";
 
-function HomeHeroSection({ burgerMenu, scrollToTop }) {
+function HomeHeroSection({ burgerMenu, setBurgerMenu, scrollToTop }) {
   const [currentSlide, setCurrentSlide] = useState(1);
 
   const activeBtnStyles = "bg-vdblue text-white";
@@ -59,7 +59,7 @@ function HomeHeroSection({ burgerMenu, scrollToTop }) {
           </Link>
         </div>
 
-        <MobileMenu burgerMenu={burgerMenu} />
+        <MobileMenu burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}/>
       </article>
 
       <article className=" hidden desktop:block relative w-[375px] h-[560px] tablet:w-[573px] tablet:h-[720px] desktop:w-[1110px] mx-auto overflow-hidden font-sparta">
