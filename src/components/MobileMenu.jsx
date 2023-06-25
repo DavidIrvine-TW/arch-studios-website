@@ -17,7 +17,7 @@ function MobileMenu(props) {
       <ul
         className={`menu-list ${burgerMenuSlide} ${burgerMenuVisible} relative z-[100] w-[343px] font-sparta text-s font-bold ml-[2rem] px-[3rem] py-[2rem] bg-vlgray`}
       >
-        <li className="mb-[1rem] cursor-pointer hover:underline relative  z-100"><Link onClick={burgerMenuHandler} to="/portfolio">Portfolio</Link></li>
+        <li className="mb-[1rem] cursor-pointer hover:underline relative z-100"><Link onClick={burgerMenuHandler} to="/portfolio">Portfolio</Link></li>
         <li className="mb-[1rem] cursor-pointer hover:underline relative z-100"><Link onClick={burgerMenuHandler} to="/about">About Us</Link></li>
         <li className="cursor-pointer hover:underline relative  z-100"><Link onClick={burgerMenuHandler} to="/contact">Contact</Link></li>
       </ul>
