@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* Header menu styles */
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+}
+.hamburger-menu span {
+  width: 30px;
+  height: 3px;
+  background-color: hsl(225, 13%, 12%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-menu.cross span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.cross span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.cross span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+#header-menu {
+  display: none
+}
+#vertical-container {
+  display: none
+}
+#vertical-text {
+  writing-mode: vertical-lr;
+ 
+}
+
+@media screen and (min-width: 768px){
+  .hamburger-menu {
+    display: none;
+  }
+  .menu-list {
+    display: none;
+  }
+  .menu-overlay {
+    display: none;
+  }
+  #header-menu {
+    display: inline-flex
+  }
+  #vertical-container {
+    display: inline-flex;
+  }
+}
+
+/* Home Page */
+
+#welcome-txt {
+  display: none
+}
+@media screen and (min-width: 768px){
+  #welcome-txt {
+    display: initial;
+  }
+}
+
+/* components fade in on load */ 
+ .fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* mobile menu slidein/out from right */
+ .slide-in {
+  animation: slideIn 0.3s forwards;
+  position: absolute;
+  right: -100%;
+  overflow-x: hidden; 
+}
+
+.slide-out {
+  animation: slideOut 0.3s forwards;
+  position: absolute;
+  overflow-x: hidden
+}
+
+@keyframes slideIn {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    right: 0;
+  }
+  to {
+    right: -100%;
+  }
+} 
+
+
+/* black and white map */
+.leaflet-tile {
+  filter: saturate(0%) !important;
+}
