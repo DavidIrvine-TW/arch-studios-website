@@ -4,19 +4,15 @@ import heroImgDesktop from '../../public/assets/about/desktop/image-hero.jpg'
 import MobileMenu from './MobileMenu'
 import AboutPageYourTeamTablet from './AboutPageYourTeamTablet'
 
-function AboutPageHero({burgerMenu, setBurgerMenu}) {
+function AboutPageHero() {
 
- 
   return (
     <div>
       <div id="vertical-container" className="absolute top-0 w-[24px] flex flex-col gap-[2.5rem] items-center ml-[2rem]">
         <div id="vertical-line" className="border-l-2 h-[105px]"></div>
         <div id="vertical-text" className="text-[1.125rem] tracking-[18px] leading-[24px] text-mgray">ABOUT US</div>
       </div>
-
- 
     <article className='relative w-[375px] tablet:w-[573px] desktop:w-[1110px] mx-auto'>
-        <MobileMenu burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} />
         <picture>
             <source srcSet={heroImgDesktop} media="(min-width: 1440px)"/>
             <source srcSet={heroImgtablet} media="(min-width: 768px)"/>

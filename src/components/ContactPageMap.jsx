@@ -11,7 +11,7 @@ function ContactPageMap({ center }) {
   }, [center]);
 
   return (
-    <div className="w-[375px] h-[375px] tablet:w-[573px] tablet:h-[573px] mx-auto tablet:mt-[14rem] desktop:mt-[5rem] tablet:mb-[10rem] desktop:w-[1110px]">
+    <div className="w-[375px] h-[375px] tablet:w-[573px] tablet:h-[573px] mx-auto tablet:mt-[7rem] desktop:mt-[5rem] tablet:mb-[10rem] desktop:w-[1110px]">
       <MapContainer
         ref={mapRef} 
         center={center}

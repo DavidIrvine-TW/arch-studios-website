@@ -82,7 +82,7 @@ function ContactPageContactUs() {
       <form className="desktop:w-[730px]">
         <div className="tablet:flex items-center">
           <input
-            className="ml-[2rem] mb-[1.5rem] mt-[2.5rem] outline-none "
+            className="ml-[2rem] mb-[1.5rem] mt-[2.5rem] outline-none tablet:w-[325x] desktop:w-[400px] desktop:h-[75px] focus:border-vdblue rounded"
             style={inputStyle}
             placeholder="Name"
             onChange={nameChangeHandler}
@@ -99,7 +99,7 @@ function ContactPageContactUs() {
 
         <div className="tablet:flex items-center">
           <input
-            className="ml-[2rem] mb-[1.5rem] mt-[2.5rem] outline-none w-[280px]"
+            className="ml-[2rem] mb-[1.5rem] mt-[2.5rem] outline-none desktop:w-[400px] desktop:h-[75px] tablet:w-[325x]"
             style={inputStyle}
             placeholder="Email"
             onChange={emailChangeHandler}
@@ -116,7 +116,7 @@ function ContactPageContactUs() {
 
         <div className="tablet:flex items-center">
           <textarea
-            className="ml-[2rem] mb-[1.5rem] mt-[2.5rem] outline-none "
+            className="ml-[2rem] mb-[1.5rem] mt-[2.5rem] outline-none desktop:w-[400px] tablet:w-[325x]"
             draggable="false"
             style={{ resize: "none", ...inputStyle }}
             placeholder="Message"

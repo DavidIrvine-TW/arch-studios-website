@@ -1,9 +1,8 @@
 import logo from "../../public/assets/logo.svg";
 import { Link } from "react-router-dom";
 
-function Header(props) {
-  const { burgerMenu, setBurgerMenu } = props;
-
+function Header({burgerMenu, setBurgerMenu}) {
+  
   const burgerMenuState = burgerMenu ? "cross" : " ";
 
   const burgerMenuHandler = () => {
@@ -30,14 +29,16 @@ function Header(props) {
             <li className="cursor-pointer  hover:text-vdblue"><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
+
         <div
           onClick={burgerMenuHandler}
-          className={`${burgerMenuState} relative hamburger-menu`}
+          className={`${burgerMenuState} relative hamburger-menu z-1000`}
         >
           <span></span>
           <span></span>
           <span></span>
         </div>
+        
       </nav>
     </header>
   );

@@ -1,9 +1,10 @@
 import Header from "./components/Header";
+import MobileMenu from "./components/MobileMenu";
 import PortfolioPage from "./components/PortfolioPage";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
-import { useState } from "react";
 import ContactPage from "./components/ContactPage";
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       className={`${mobileMenuOverflowScreen}  overflow-hidden mx-auto desktop:w-[1440px] border`}
     >
       <Header burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} />
+      <MobileMenu burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}/>
       <main>
         <Routes>
           <Route

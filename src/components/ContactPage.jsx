@@ -5,12 +5,12 @@ import ContactPageMap from "./ContactPageMap"
 import ContactPageContactUs from "./ContactPageContactUs"
 import {useState} from 'react'
 
-function ContactPage({burgerMenu, setBurgerMenu, scrollToTop}) {
+function ContactPage({scrollToTop}) {
   const [center, setCenter] = useState([40.9994353685655,  -81.4947866213419]);
 
   return (
     <section className="fade-in w-[375px] tablet:w-[768px] desktop:w-[1440px] overflow-hidden mx-auto">
-        <ContactPageHero burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}/>
+        <ContactPageHero/>
         <ContactPageYourProject setCenter={setCenter}/>
         <ContactPageMap center={center}/>
         <ContactPageContactUs/>
