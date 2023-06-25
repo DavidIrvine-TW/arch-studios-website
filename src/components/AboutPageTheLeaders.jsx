@@ -2,22 +2,22 @@ import React from 'react';
 
 const leaderImgPath = [
   {
-    path: 'src/assets/about/desktop/avatar-jake.jpg',
+    path: './assets/about/desktop/avatar-jake.jpg',
     title: 'Chief Architect',
     name: 'Jake Richards',
   },
   {
-    path: 'src/assets/about/desktop/avatar-thompson.jpg',
+    path: './assets/about/desktop/avatar-thompson.jpg',
     title: 'Head of Finance',
     name: 'Thompson Smith',
   },
   {
-    path: 'src/assets/about/desktop/avatar-jackson.jpg',
+    path: './assets/about/desktop/avatar-jackson.jpg',
     title: 'Lead Designer',
     name: 'Jackson Rourke',
   },
   {
-    path: 'src/assets/about/desktop/avatar-maria.jpg',
+    path: './assets/about/desktop/avatar-maria.jpg',
     title: 'Senior Architect',
     name: 'Maria Simpson',
   },

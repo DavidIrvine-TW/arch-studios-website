@@ -4,9 +4,9 @@ import arrow from "../../public/assets/icons/icon-arrow.svg";
 const imgPaths = [
   {
     id: 1,
-    path: "src/assets/portfolio/mobile/image-del-sol.jpg",
-    pathtablet: "src/assets/portfolio/tablet/image-del-sol.jpg",
-    pathdesktop: "src/assets/portfolio/desktop/image-del-sol.jpg",
+    path: "./assets/portfolio/mobile/image-del-sol.jpg",
+    pathtablet: "./assets/portfolio/tablet/image-del-sol.jpg",
+    pathdesktop: "./assets/portfolio/desktop/image-del-sol.jpg",
     title: "Project Del Sol",
     date: "",
     extra: "View all projects",
@@ -14,9 +14,9 @@ const imgPaths = [
   },
   {
     id: 2,
-    path: "src/assets/portfolio/mobile/image-228b.jpg",
-    pathtablet: "src/assets/portfolio/tablet/image-228b.jpg",
-    pathdesktop: "src/assets/portfolio/desktop/image-228b.jpg",
+    path: "./assets/portfolio/mobile/image-228b.jpg",
+    pathtablet: "./assets/portfolio/tablet/image-228b.jpg",
+    pathdesktop: "./assets/portfolio/desktop/image-228b.jpg",
     title: "228B Tower",
     date: "",
     extra: "View all projects",
@@ -24,9 +24,9 @@ const imgPaths = [
   },
   {
     id: 3,
-    path: "src/assets/portfolio/mobile/image-prototype.jpg",
-    pathtablet: "src/assets/portfolio/tablet/image-prototype.jpg",
-    pathdesktop: "src/assets/portfolio/desktop/image-prototype.jpg",
+    path: "./assets/portfolio/mobile/image-prototype.jpg",
+    pathtablet: "./assets/portfolio/tablet/image-prototype.jpg",
+    pathdesktop: "./assets/portfolio/desktop/image-prototype.jpg",
     title: "Le Prototype",
     date: "",
     extra: "View all projects",
